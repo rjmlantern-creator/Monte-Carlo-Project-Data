@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+*.key
+*.pem
+
+# Data and generated outputs — adjust to your project
+data/raw/
+outputs/
+*.log
+
+100000_COSINE_DATA.txt
+100000_Transverse_Momenta_DATA.txt
+Final_Monte_Carlo_Code.exe
+Final_Monte_Carlo_Code.ilk
+Final_Monte_Carlo_Code.obj
+Final_Monte_Carlo_Code.pdb
+vc140.pdb

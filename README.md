@@ -33,3 +33,15 @@ cl /EHsc Final_Monte_Carlo_Code.cpp /Fe:Final_Monte_Carlo_Code.exe
 - The code uses a fixed center-of-mass energy `ECM = 80`.
 - The generated output is intended for inspection and demonstration, not for production physics software.
 - You can adjust the number of iterations and generated events in `main()`.
+
+## Fusion extension
+
+The same three-stage pipeline (integrate a differential cross section, sample it by hit-or-miss,
+build final-state four-vectors) has been generalized to D-T and D-D nuclear fusion in
+[`fusion/`](fusion/): reactivity ⟨σv⟩(T) from the Bosch-Hale cross sections, acceptance-rejection
+sampling of reacting ion pairs, two-body kinematics with a Lorentz boost to the lab frame, and
+Doppler-broadened neutron spectra validated against the Brysk width. 100,000 events per run.
+
+![Fusion results](fusion/figures/fusion_mc_results.png)
+
+See [`fusion/README.md`](fusion/README.md) for build instructions, physics, and validation.
